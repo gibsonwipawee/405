@@ -7,6 +7,11 @@
     <!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap-4.0.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/stylesheet-compiled.css?<?php echo rand(0,999); ?>">
+    <style>
+      body {
+        background : #b27f8a !important;
+      }
+    </style>
   </head>
 
   <body class="login">
@@ -19,26 +24,28 @@
 
       <form action="saveLogin.php" method="POST" name="myFormLogin" id="myFormLogin">
         <div class="form-group has-feedback">
-          <label for="exampleInputEmail1">Email address Or Username</label>
-          <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required=true>
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="exampleInputEmail1">Username</label>
+          <input name="username" type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username" required=true>
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
-
+        
         <div class="form-group has-feedback">
           <label for="exampleInputPassword1">Password</label>
           <input name="passWord" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required=true>
         </div>
+       
 
         <div class="form-check">
+        <a href="url">Forgot password?</a>
           <label class="form-check-label">
             <input type="checkbox" class="form-check-input">
-            Check me out
+            Keep me signed in
           </label>
         </div>
 
         <div class="form-group">
-          <button type="submit" class="btn btn-primary"> Submit </button>
-          <button type="reset" class="btn btn-danger"> Reset </button>
+          <button type="submit" class="btn btn-primary"> Sign In </button>
+          <!-- <button type="reset" class="btn btn-danger"> Reset </button> -->
         </div>
       </form>
     </div>
